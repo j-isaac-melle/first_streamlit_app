@@ -19,8 +19,8 @@ my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.co
 #sets the index to Fruit column NOT NUMBERS
 my_fruit_list = my_fruit_list.set_index('Fruit')
 
-#pick select list here for smothie creation: 
-streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index)),['Avocado','Strawberries'])
+#pick select list here for smothie creation: (list from index index declared)
+streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberries'])
 
 #display table on page 
 streamlit.dataframe(my_fruit_list)
