@@ -58,7 +58,7 @@ if streamlit.button('Get Fruit Load List'):
       streamlit.dataframe(my_data_rows)
 #connecting to snowflake
 #dont run anything past while troubleshooting:
-streamlit.stop()
+#streamlit.stop()
 
 
 #import snowflake.connector
